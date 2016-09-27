@@ -8,7 +8,8 @@
 
 import UIKit
 
-class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
+class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+
     
     private let cellId = "appCellId"
     
