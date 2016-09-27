@@ -15,7 +15,8 @@
 		FA3A79851D9A7836009F8F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3A79831D9A7836009F8F36 /* LaunchScreen.storyboard */; };
 		FA3A79901D9A7836009F8F36 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A798F1D9A7836009F8F36 /* AppStoreTests.swift */; };
 		FA3A799B1D9A7836009F8F36 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A799A1D9A7836009F8F36 /* AppStoreUITests.swift */; };
-		FA3A79A91D9A7FC7009F8F36 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A79A81D9A7FC7009F8F36 /* CategoryCell.swift */; };
+		FA3A79AB1D9A9D7E009F8F36 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A79AA1D9A9D7E009F8F36 /* AppCell.swift */; };
+		FA3A79AD1D9A9DB2009F8F36 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A79AC1D9A9DB2009F8F36 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,8 @@
 		FA3A79961D9A7836009F8F36 /* AppStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3A799A1D9A7836009F8F36 /* AppStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		FA3A799C1D9A7836009F8F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA3A79A81D9A7FC7009F8F36 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		FA3A79AA1D9A9D7E009F8F36 /* AppCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
+		FA3A79AC1D9A9DB2009F8F36 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +103,14 @@
 		FA3A79761D9A7836009F8F36 /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
+				FA3A79AF1D9A9DE2009F8F36 /* cells */,
 				FA3A79771D9A7836009F8F36 /* AppDelegate.swift */,
-				FA3A79791D9A7836009F8F36 /* FeaturedAppsController.swift */,
+				FA3A79B01D9A9DED009F8F36 /* controllers */,
 				FA3A797B1D9A7836009F8F36 /* Main.storyboard */,
 				FA3A79811D9A7836009F8F36 /* Assets.xcassets */,
 				FA3A79831D9A7836009F8F36 /* LaunchScreen.storyboard */,
 				FA3A79861D9A7836009F8F36 /* Info.plist */,
 				FA3A797E1D9A7836009F8F36 /* AppStore.xcdatamodeld */,
-				FA3A79A81D9A7FC7009F8F36 /* CategoryCell.swift */,
 			);
 			path = AppStore;
 			sourceTree = "<group>";
@@ -129,6 +131,23 @@
 				FA3A799C1D9A7836009F8F36 /* Info.plist */,
 			);
 			path = AppStoreUITests;
+			sourceTree = "<group>";
+		};
+		FA3A79AF1D9A9DE2009F8F36 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA3A79AC1D9A9DB2009F8F36 /* CategoryCell.swift */,
+				FA3A79AA1D9A9D7E009F8F36 /* AppCell.swift */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		FA3A79B01D9A9DED009F8F36 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA3A79791D9A7836009F8F36 /* FeaturedAppsController.swift */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,10 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3A79AB1D9A9D7E009F8F36 /* AppCell.swift in Sources */,
 				FA3A79801D9A7836009F8F36 /* AppStore.xcdatamodeld in Sources */,
 				FA3A797A1D9A7836009F8F36 /* FeaturedAppsController.swift in Sources */,
 				FA3A79781D9A7836009F8F36 /* AppDelegate.swift in Sources */,
-				FA3A79A91D9A7FC7009F8F36 /* CategoryCell.swift in Sources */,
+				FA3A79AD1D9A9DB2009F8F36 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +542,7 @@
 				FA3A79A11D9A7836009F8F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA3A79A21D9A7836009F8F36 /* Build configuration list for PBXNativeTarget "AppStoreTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +551,7 @@
 				FA3A79A41D9A7836009F8F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA3A79A51D9A7836009F8F36 /* Build configuration list for PBXNativeTarget "AppStoreUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +560,7 @@
 				FA3A79A71D9A7836009F8F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
