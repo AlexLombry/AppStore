@@ -21,7 +21,6 @@ class AppCell: UICollectionViewCell {
     // each image of the view
     let imageView: UIImageView = {
         let iv = UIImageView()
-        
         iv.image = UIImage(named: "frozen")
         iv.contentMode = .scaleAspectFill
         iv.layer.cornerRadius = 16
@@ -33,7 +32,6 @@ class AppCell: UICollectionViewCell {
     // set the label for each image view
     let nameLabel: UILabel = {
         let label = UILabel()
-        
         label.text = "Disney Build It: Frozen"
         label.font = .systemFont(ofSize: 14)
         label.numberOfLines = 2
@@ -44,7 +42,6 @@ class AppCell: UICollectionViewCell {
     // set the label for each image view
     let categoryLabel: UILabel = {
         let label = UILabel()
-        
         label.text = "Entertainment"
         label.font = .systemFont(ofSize: 13)
         label.textColor = .darkGray
@@ -55,7 +52,6 @@ class AppCell: UICollectionViewCell {
     // set the label for each image view
     let priceLabel: UILabel = {
         let label = UILabel()
-        
         label.text = "3.99€"
         label.font = .systemFont(ofSize: 13)
         label.textColor = .darkGray

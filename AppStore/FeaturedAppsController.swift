@@ -14,7 +14,6 @@ class FeaturedAppsController: UICollectionViewController, UICollectionViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         collectionView?.backgroundColor = .white
         collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
     }
@@ -32,5 +31,4 @@ class FeaturedAppsController: UICollectionViewController, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 230)
     }
-
 }

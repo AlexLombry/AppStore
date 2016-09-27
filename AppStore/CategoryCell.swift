@@ -23,7 +23,6 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
     
     let nameLabel: UILabel = {
         let label = UILabel()
-        
         label.text = "Best New Apps"
         label.font = .systemFont(ofSize: 16)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -34,20 +33,18 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
     let appsCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-       
         collectionView.backgroundColor = .clear
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+
         return collectionView
-        
     }()
     
     let dividerLineView: UIView = {
         let view = UIView()
         
         view.backgroundColor = UIColor(white: 0.4, alpha: 0.4)
-        
-        // mandatory, if not the app will crash
         view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
@@ -82,6 +79,5 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsetsMake(0, 14, 0, 14)
-    }
-    
+    }   
 }
